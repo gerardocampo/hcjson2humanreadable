@@ -4,6 +4,12 @@
 Just a quick one-off py script to format json file from Hipchat logs/history to stdout in a human readable format.
 
 
+## Requirements: 
+
+- Python 3. ***  Does not work with Python2.
+- The json file from Hipchat to parse.
+
+
 ## Quick instructions: 
 
 1. Get your json file either from hipchat support or from the Hipchat RESTful API.  See https://www.hipchat.com/docs/apiv2 and https://developer.atlassian.com/server/hipchat/about-the-hipchat-rest-api/ for more information, if needed. 
@@ -22,7 +28,8 @@ Additionally, it is also able to deal with "administratively deleted" messages.
 
 ## Possible Future Work (?): 
 
-i.	Only sending to stdout - but maybe will spend time outputting to csv at some point. 
-ii.	Only parsing one file at a time. 
+- Output to CSV, not just stdout. 
+- Parse multiple files at a time. 
+- Do webrequests to retrieve chat history files from Hipchat API.	
 
 
