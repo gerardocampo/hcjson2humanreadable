@@ -29,10 +29,6 @@ This script is able to parse:
 * File attachments posted in messages
 * Messages deleted by a Hipchat administrator
 
- 
-
-Additionally, it is also able to deal with "administratively deleted" messages. 
-
 
 ## Possible Future Work (?): 
 
@@ -40,6 +36,7 @@ Additionally, it is also able to deal with "administratively deleted" messages.
 - Output to CSV, not just stdout. 
 - Parse multiple files at a time. 
 - Do webrequests to retrieve chat history files from Hipchat API.	
+* And bypass the maxresults=1000 limit per GET request.
 - Convert date/time format from Zulu to local (ET).
 
 
