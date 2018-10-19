@@ -36,6 +36,14 @@ for msg in data['items']:
         mention_name = msg['from']['mention_name']
         name = msg['from']['name']
         print(msg['date'], "\t" + mention_name, "\t" + name, "\t" + "THIS IS A DELETED MESSAGE.")
+    elif 'file' in msg:
+        file_name = msg['file']['name']
+        file_url = msg['file']['url']
+        file_size = msg['file']['size']
+        mention_name = msg['from']['mention_name']
+        name = msg['from']['name']
+        #print("This has an attachment.")
+        print(msg['date'], "\t" + mention_name, "\t" + name, "\t" + msg['message'], "<FILE ATTACHMENT - filename: " + file_name, ", url: " + file_url, " >")
     elif msg['message'] != None and msg['type'] == 'message':
         #        print("This is a normal message")
         mention_name = msg['from']['mention_name']
